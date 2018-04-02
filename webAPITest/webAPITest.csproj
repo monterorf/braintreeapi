@@ -252,6 +252,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Business\BraintreeConfiguration.cs" />
+    <Compile Include="Business\BrainTreePaymentProvider.cs" />
+    <Compile Include="Business\IBraintreeConfiguration.cs" />
+    <Compile Include="Business\IPaymentProvider.cs" />
+    <Compile Include="Business\PaymentProviderFactory.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CheckoutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -266,7 +271,7 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Request.cs" />
+    <Compile Include="Models\PaymentRequest.cs" />
     <Compile Include="Models\ResponseService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -345,12 +350,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\webAPITest.Business\webAPITest.Business.csproj">
-      <Project>{94014ec9-ac1b-4598-a8af-33f63ccdf1ac}</Project>
-      <Name>webAPITest.Business</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

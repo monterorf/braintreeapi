@@ -5,7 +5,7 @@ using System.Web;
 
 namespace webAPITest.Models
 {
-    public class Request
+    public class PaymentRequest
     {
         public decimal Amount { get; set; }
         public string PaymentMethodNonce { get; set; }
